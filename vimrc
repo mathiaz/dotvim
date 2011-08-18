@@ -29,10 +29,7 @@ set incsearch
 "hilight searches by default
 set hlsearch
 "dont wrap lines
-set wrap
-
-"wrap lines at convenient points
-set linebreak
+set nowrap
 
 "default indent settings
 set tabstop=4
