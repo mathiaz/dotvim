@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/home/mathias/.vim/ftdetect'
 let g:netrw_dirhist_2='/home/mathias/projects/zimride/code/zimride.git/v3/application/models/Event'
 let g:netrw_dirhist_3='/home/mathias/projects/zimride/code/zimride.git/v3/application/models'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/home/mathias/projects/zimride/code/zimride.git/v3/applic
 let g:netrw_dirhist_5='/home/mathias/projects/zimride/code/zimride.git/v3'
 let g:netrw_dirhist_6='/home/mathias/projects/zimride/code/zimride.git'
 let g:netrw_dirhist_7='/home/mathias/projects/zimride/code/zimride.git/v3/application/models/Platform'
+let g:netrw_dirhist_8='/home/mathias/projects/zimride/infra/ziminfra.git/puppet/modules/shibboleth/templates/sp'
