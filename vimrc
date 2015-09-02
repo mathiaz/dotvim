@@ -144,3 +144,6 @@ endfunction
 
 "spell check when writing commit logs
 autocmd filetype svn,*commit* setlocal spell
+
+"disable rope in python-mode.
+let g:pymode_rope = 0
