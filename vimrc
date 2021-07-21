@@ -1,19 +1,27 @@
+" https://github.com/dense-analysis/ale - Asynchronous Lint Engine
+" https://github.com/dense-analysis/ale#generating-vim-help-files
+" Put these lines at the very end of your vimrc file.
+
+" Load all plugins now.
+" Plugins need to be added to runtimepath before helptags can be generated.
+packloadall
+" Load all of the helptags now, after plugins have been loaded.
+" All messages and errors will be ignored.
+silent! helptags ALL
+
+" https://github.com/dense-analysis/ale#2ii-fixing
+" In ~/.vim/vimrc, or somewhere similar.
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'python': ['black', 'isort'],
+\}
+
+" Set this variable to 1 to fix files when you save them.
+let g:ale_fix_on_save = 1
+
 set number
 syntax on
 filetype plugin on
-
-"https://black.readthedocs.io/en/stable/integrations/editors.html#vim
-autocmd BufWritePre *.py execute ':Black'
-
-"https://jezenthomas.com/shell-script-static-analysis-in-vim/
-au QuickFixCmdPost [^l]* nested cwindow
-au QuickFixCmdPost    l* nested lwindow
-
-"https://www.nebulaworks.com/insights/posts/terraform-tips-vim-plugin-basics/
-"https://github.com/hashivim/vim-terraform/blob/master/doc/terraform.txt
-let g:terraform_fmt_on_save=1
-"Overrides the indentation level to 2 spaces to conform to the hashicorp style:
-let g:terraform_align=1
 
 "https://www.vimfromscratch.com/articles/spell-and-grammar-vim/
 autocmd FileType markdown setlocal spell
