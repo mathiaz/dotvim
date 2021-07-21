@@ -1,3 +1,6 @@
 [submodule "pack/syntax/start/ale"]
 	path = pack/syntax/start/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "pack/syntax/start/vim-terraform"]
+	path = pack/syntax/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
