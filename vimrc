@@ -26,10 +26,13 @@ let g:ale_fix_on_save = 1
 " https://github.com/dense-analysis/ale/issues/1646
 let g:ale_yaml_yamllint_options='-d relaxed'
 
-" Set flake8 max line length the same as the black max line length
-" https://stackoverflow.com/a/64688676
-" https://black.readthedocs.io/en/stable/the_black_code_style/current_style.html#line-length
-let g:ale_python_flake8_options = '--max-line-length=88'
+" https://black.readthedocs.io/en/stable/guides/using_black_with_other_tools.html#flake8
+let g:ale_python_flake8_options = '--max-line-length=88 --extend-ignore=E203'
+
+" https://www.reddit.com/r/vim/comments/l2y47c/comment/gkoni6l/?utm_source=share&utm_medium=web2x&context=3
+let g:ale_linter_aliases = {
+\ 'sls': 'salt'
+\}
 
 set number
 syntax on
