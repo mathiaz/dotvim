@@ -1,13 +1,15 @@
-# Installation
+# DotVim
 
-## Clone github repository
+## Installation
 
-    git clone git@github.com:mathiaz/dotvim.git ~/.vim
+## Clone GitHub repository
 
-## Create symlinks:
+    git clone --recurse-submodules -j8 git@github.com:mathiaz/dotvim.git ~/.vim
+
+## Create symlinks
 
     ln -s ~/.vim/vimrc ~/.vimrc
 
-# References:
+## References
 
-https://medium.com/@paulodiovani/installing-vim-8-plugins-with-the-native-pack-system-39b71c351fea
+[Installing Vim(8) plugins with the native pack system](https://medium.com/@paulodiovani/installing-vim-8-plugins-with-the-native-pack-system-39b71c351fea)
